@@ -2,7 +2,7 @@
 
 ## Quick Start (for front-end developers)
 
-> Using NodeJS is only one option amongst many others. 
+> NOTE: Using NodeJS is only one option amongst many others. IIS and Apache are amongst the other options.
 
 Clone undb-portal from GiutHub
 
