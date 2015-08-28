@@ -1,4 +1,4 @@
-# United Nations Decade on Biodiversity Portal
+**United Nations Decade on Biodiversity Portal**
 
 ## Quick Start (for front-end developers)
 
