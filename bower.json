@@ -1,0 +1,7 @@
+{
+    "name": "undb-portal",
+    "dependencies": {
+        "bootstrap": "3.3.5",
+        "bootstrap-datepicker": "1.4.0"
+    }
+}

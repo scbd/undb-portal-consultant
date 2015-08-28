@@ -1,0 +1,17 @@
+{
+    "name": "undb-portal",
+    "description": "United Nations Decade on Biodiversity Portal ",
+    "dependencies": {
+        "bower": "1.5.2",
+        "express": "4.13.3",
+        "morgan": "1.6.1",
+        "serve-static": "1.10.0"
+    },
+    "engine": "node >= 0.10.36",
+    "license": "MIT",
+    "private": true,
+    "repository": "scbd/undb-portal",
+    "scripts": {
+        "postinstall": "./node_modules/.bin/bower install --allow-root"
+    }
+}
