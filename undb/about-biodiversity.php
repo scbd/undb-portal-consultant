@@ -1,4 +1,4 @@
-<?php include('/partials/header.php'); ?>
+<?php include(__DIR__ . '/partials/header.php'); ?>
 
 
 <div class="center article accordion">
@@ -135,4 +135,4 @@
 </div>
 
 </div>
-<?php include('/partials/footer.php'); ?>
+<?php include(__DIR__ . '/partials/footer.php'); ?>
