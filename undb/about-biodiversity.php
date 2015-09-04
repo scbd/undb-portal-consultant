@@ -7,7 +7,7 @@
   <div class="panel panel-default">
 	  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 	    <div class="panel-heading" role="tab" id="headingOne">
-	    	<img src="img/article/1.png" alt="">
+	    	<img src="/undb/img/article/1.png" alt="">
 	    	<div class="accordionTitle">
 		      <h2 class="panel-title">
 		          The value of biodiversity
@@ -99,7 +99,7 @@
   <div class="panel panel-default">
 	  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 	    <div class="panel-heading" role="tab" id="headingTwo">
-	    	<img src="img/article/2.png" alt="">
+	    	<img src="/undb/img/article/2.png" alt="">
 	    	<div class="accordionTitle">
 		      <h2 class="panel-title">
 		          Why we are losing biodiversity
@@ -117,7 +117,7 @@
   <div class="panel panel-default">
 	  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 	    <div class="panel-heading" role="tab" id="headingThree">
-	    	<img src="img/article/3.png" alt="">
+	    	<img src="/undb/img/article/3.png" alt="">
 	    	<div class="accordionTitle">
 		      <h2 class="panel-title">
 		          Action for biodiversity
