@@ -1,4 +1,4 @@
-<?php include('/partials/header.php'); ?>
+<?php include(__DIR__ . '/partials/header.php'); ?>
 
 <div class="center article">
 	<h1>Taking Action for Biodiversity</h1>
@@ -56,4 +56,4 @@
 </div>
 
 
-<?php include('/partials/footer.php'); ?>
+<?php include(__DIR__ . '/partials/footer.php'); ?>

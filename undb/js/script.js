@@ -1,5 +1,21 @@
 $(document).ready(function(){
 
+
+/* MENU */
+
+// hiding secondary menu from 
+if(window.location.pathname == '/undb/'){
+	$("#secondary").hide();
+}
+
+// showing the right secondary menu for each page
+if(window.location.pathname.indexOf('about')){
+	$("#secondary .about-menu").removeClass('hide');
+}
+
+/* ////MENU */
+
+
 /* SLIDER */
 
 

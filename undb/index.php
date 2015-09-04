@@ -1,9 +1,9 @@
-	<?php include('/partials/header.php'); ?>
+	<?php include(__DIR__ . '/partials/header.php'); ?>
 		
 	<div id="welcome">
 		<div id="slider">
 		  <div>
-		  	<img src="img/slider/slider-1.png" alt="">
+		  	<img src="/undb/img/slider/slider-1.png" alt="">
 		  	<div class="sliderPopup">
 		  		<h4>2015 is the Time for Global Action</h4>
 		  		<p>2015 presents a historic and unprecedented opportunity to bring the countries and citizens of the world together 
@@ -76,7 +76,7 @@
 			</div>
 			<div id="googlemap" class="col-md-9">
 				<!-- Replace img with the Map  -->
-				<img src="img/map.png" alt="">
+				<img src="/undb/img/map.png" alt="">
 				<div class="mapPopup">
 					<p>The UNDB Network comprises all Actors contributing to the implementation of the 2011-2020 Strategic Plan for Biodiversity.</p>
 					<button type="button" class="closeButton"></button>
@@ -145,13 +145,13 @@
 	
 	<div class="logosInline center">
 		<ul>
-			<li><img src="img/logo/un.svg" alt=""></li>
-			<li><img src="img/logo/unep.svg" alt=""></li>
-			<li><img src="img/logo/cbd.svg" alt=""></li>
-			<li><img src="img/logo/korea.svg" alt=""></li>
-			<li><img src="img/logo/india.svg" alt=""></li>
-			<li><img src="img/logo/japan.svg" alt=""></li>
-			<li><img src="img/logo/unddd.svg" alt=""></li>
+			<li><img src="/undb/img/logo/un.svg" alt=""></li>
+			<li><img src="/undb/img/logo/unep.svg" alt=""></li>
+			<li><img src="/undb/img/logo/cbd.svg" alt=""></li>
+			<li><img src="/undb/img/logo/korea.svg" alt=""></li>
+			<li><img src="/undb/img/logo/india.svg" alt=""></li>
+			<li><img src="/undb/img/logo/japan.svg" alt=""></li>
+			<li><img src="/undb/img/logo/unddd.svg" alt=""></li>
 		</ul>
 	</div>
 

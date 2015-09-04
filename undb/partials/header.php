@@ -10,16 +10,16 @@
 
     <title>UN - CBD</title>
 
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="/css/original.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/undb/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/undb/css/original.css" />
+    <link rel="stylesheet" type="text/css" href="/undb/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/undb/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="/undb/css/style.css" />
 
-    <script type="text/javascript" src="/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="text/javascript" src="/js/script.js"></script>
+    <script type="text/javascript" src="/undb/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/undb/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/undb/slick/slick.min.js"></script>
+    <script type="text/javascript" src="/undb/js/script.js"></script>
 
 
 </head>
@@ -136,8 +136,8 @@
 
 <header>
     <div id="logo">
-        <a href="//un.org"><img src="../img/logo/un.svg" alt=""></a>
-        <a href="/"><img src="../img/logo/undb.svg" alt=""></a>
+        <a href="//un.org"><img src="/undb/img/logo/un.svg" alt=""></a>
+        <a href="/undb/"><img src="/undb/img/logo/undb.svg" alt=""></a>
     </div>
 
     <div id="slogan">
@@ -149,39 +149,35 @@
     <div id="main" class="menu">
         <div class="center">
             <ul>
-                <li class="active"><a href="/">Home</a></li>
-                <li><a href="/about-unbd.php">About</a></li>
+                <li class="active"><a href="/undb/">Home</a></li>
+                <li><a href="/undb/about-unbd.php">About</a></li>
                 <li><a href="">Actions</a></li>
                 <li><a href="">Actors</a></li>
                 <li><a href="">Resources</a></li>
             </ul>
 
             <ul id="social">
-                <li><a href=""><img src="../img/icon/facebook.svg" alt=""></a></li>
-                <li><a href=""><img src="../img/icon/twitter.svg" alt=""></a></li>
-                <li><a href=""><img src="../img/icon/instagram.svg" alt=""></a></li>
-                <li><a href=""><img src="../img/icon/youtube.svg" alt=""></a></li>
-                <li><a href=""><img src="../img/icon/flickr.svg" alt=""></a></li>
+                <li><a href=""><img src="/undb/img/icon/facebook.svg" alt=""></a></li>
+                <li><a href=""><img src="/undb/img/icon/twitter.svg" alt=""></a></li>
+                <li><a href=""><img src="/undb/img/icon/instagram.svg" alt=""></a></li>
+                <li><a href=""><img src="/undb/img/icon/youtube.svg" alt=""></a></li>
+                <li><a href=""><img src="/undb/img/icon/flickr.svg" alt=""></a></li>
             </ul>
         </div>
     </div>
 
-    <!-- php code to hide secondary menu in home page -->
-    <div id="secondary" class="menu <?php echo strlen($_SERVER['REQUEST_URI']) == 1 ? 'hide' : '';  ?>">
+    <div id="secondary" class="menu">
         <div class="center">
-            <ul>
-                <!-- php code to show appropriate secondary menu -->
-                <?php
-                    if(strpos($_SERVER['REQUEST_URI'], 'about')){
-                ?>
-                <li><a href="/about-unbd.php">UNDB</a></li>
-                <li><a href="/about-goals.php">Goals</a></li>
-                <li><a href="/about-biodiversity.php">Biodiversity</a></li>
-                <li><a href="/about-iyb2010.php">IYB2010</a></li>
-                <li><a href="/about-sdgs.php">SDGs</a></li>
-                <?php
-                    }
-                ?>                
+            <ul class="about-menu hide">
+
+
+                <li><a href="/undb/about-unbd.php">UNDB</a></li>
+                <li><a href="/undb/about-goals.php">Goals</a></li>
+                <li><a href="/undb/about-biodiversity.php">Biodiversity</a></li>
+                <li><a href="/undb/about-iyb2010.php">IYB2010</a></li>
+                <li><a href="/undb/about-sdgs.php">SDGs</a></li>
+            
             </ul>
+         
         </div>
     </div>
