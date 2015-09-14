@@ -13,6 +13,56 @@ if(window.location.pathname.indexOf('about')){
 	$("#secondary .about-menu").removeClass('hide');
 }
 
+
+
+
+
+function activeArrow(elem, left, width, speed){
+	$(elem).siblings('.arrow_slider_wrapper').children('.arrow_slider')
+		.stop().animate({left:left, width:width}, speed);			
+}
+$(window).resize(function(){
+	$('.menu_arrow').each(function(){
+		var left = $(this).children('.active').offset().left - $(this).offset().left;
+		var width = $(this).children('.active').children('a').css('width');
+		activeArrow(this, left, width, 350);
+	});
+});
+
+
+
+
+$('.menu_arrow').each(function(){
+		// init
+
+		var left = $(this).children('.active').offset().left - $(this).offset().left;
+		var width = $(this).children('.active').css('width');
+		activeArrow(this, left, width, 50);
+
+		// on click
+		$(this).click(function(e){
+			// e.preventDefault();
+			var left = $(e.target).parent('li').offset().left - $(this).offset().left;
+			var width = $(e.target).css('width');
+			activeArrow(this, left, width, 350);
+		});
+
+		// on hover
+		$(this).children('li').hover(function(){
+			var left =  $(this).offset().left - $(this).parent().offset().left;
+			var width = $(this).css('width');
+			activeArrow($(this).parent('ul'), left, width, 350);
+		});
+
+		$(this).mouseleave(function(){
+			var left = $(this).children('.active').offset().left - $(this).offset().left;
+			var width = $(this).children('.active').css('width');
+			activeArrow(this, left, width, 350);			
+		});
+
+});
+
+
 /* ////MENU */
 
 
@@ -31,13 +81,17 @@ if(window.location.pathname.indexOf('about')){
 
 // closing the green popup
 $('#map .mapPopup button.closeButton').click(function(){
-	$(this).parent('.mapPopup').remove();
+	$(this).parent('.mapPopup').hide();
 });
 
 // selecting a UNDB Network
 $('#map .sideSelection ul li').click(function(){
 	$('#map .sideSelection ul li.active').removeClass('active');
 	$(this).addClass('active');
+
+	var text = $(this).data('text');
+	$('.mapPopup').children('p').html(text)
+	$('.mapPopup').show();
 });
 
 /* ////MAP */

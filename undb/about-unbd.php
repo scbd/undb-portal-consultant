@@ -40,18 +40,39 @@
 
 
 <div class="blocksHub center">
-		<a class="linkBlock blue">
-			<h5>Aichi Biodiversity Targets Task Force</h5>
-			<p>Discover the pledges of the UNDB champions</p>
-			
-			<!-- svg -->			
-		</a>
-		<a class="linkBlock blue">
-			<h5>Biodiversity Champions</h5>
-			<p>Discover the pledges of the UNDB champions</p>
+		<div class="linkBlock green downloadLanguage medium">
+			<div>
+				<h5>Strategic Plan for Biodiversity 2011-2020</h5>
+				<p></p>
+				<ul class="languageList">
+					<li><a href="#">En</a></li>
+					<li><a href="#">Es</a></li>
+					<li><a href="#">Fr</a></li>
+					<li><a href="#">Py</a></li>
+					<li><a href="#">中文</a></li>
+					<li><a href="#">العربية</a></li>
+				</ul>
 
-			<!-- svg -->
-		</a>
+				<img class="image-icon" src="/undb/img/strategic-plan.png" alt="">
+			</div>	
+		</div>	
+
+		<div class="linkBlock green downloadLanguage medium">
+			<div>
+				<h5>Stretegy</h5>
+				<p>for the United Nations Decade on Biodiversity</p>
+				<ul class="languageList">
+					<li><a href="#">En</a></li>
+					<li><a href="#">Es</a></li>
+					<li><a href="#">Fr</a></li>
+					<li><a href="#">Py</a></li>
+					<li><a href="#">中文</a></li>
+					<li><a href="#">العربية</a></li>
+				</ul>
+
+				<img class="file-icon" src="/undb/img/icon/pdf-file.png" alt="">
+			</div>	
+		</div>		
 
 </div>
 
