@@ -114,7 +114,7 @@
 				<?php include(__DIR__ . '/img/icon/parent.svg'); ?>
 			</div>				
 		</a>
-		<div class="linkBlock blue full downloadLanguage">
+		<div class="linkBlock blue full downloadLanguage fillSvg">
 			<div>
 				<h5>Strategic Plan for Biodiversity 2011-2020</h5>
 				<ul class="languageList">
@@ -142,7 +142,7 @@
 				<?php include(__DIR__ . '/img/icon/flamingo.svg'); ?>
 			</div>	
 		</a>
-		<div class="linkBlock blue full downloadLanguage">
+		<div class="linkBlock blue full downloadLanguage fillSvg">
 			<div>
 				<h5>Strategy</h5>
 				<p>for the United Nations Decade on Biodiversity</p>

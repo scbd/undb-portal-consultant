@@ -15,7 +15,7 @@
 
 
 <div class="blocksHub center">
-		<a href="#" class="linkBlock green titleText medium fillSvg">
+		<a href="#" class="linkBlock green titleText medium fillSvg cornerIcon">
 			<div>
 				<h5>IYB celebrations in your country</h5>
 				<p>See what people did in 2010 ></p>
@@ -67,7 +67,7 @@
 
 		<div class="linkBlock green downloadLanguage medium">
 			<div>
-				<h5>IYB Closing evnet in Japan</h5>
+				<h5>IYB Closing event in Japan</h5>
 				<p>Download the report</p>
 				<ul class="languageList">
 					<li><a href="#">En</a></li>
