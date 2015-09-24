@@ -39,7 +39,7 @@
 		<form action="">
 			<div class="form-column">
 				<label for="input_country">Country:</label>
-				<select name="" id="" class="selectpicker">
+				<select name="" id="" class="selectpicker" data-container="body" data-live-search="true">
 					<option value="">Canada</option>
 					<option value="">USA</option>
 				</select>

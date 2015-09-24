@@ -94,7 +94,7 @@ $('.menu_arrow:not(.hide)').each(function(){
 
 
 // handling sub menus
-$("#siteMenu .dropdown-menu>li>a").click(function(e){
+$("#siteMenu .dropdown-menu>li>a:after").click(function(e){
 	 e.stopPropagation();
 
 	if($(this).siblings('ul').length > 0){

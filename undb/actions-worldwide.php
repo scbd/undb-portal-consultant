@@ -15,4 +15,7 @@
 	<a href="" class="button green">Register your action</a>
 </div>
 
+<?php include(__DIR__ . '/partials/map.php'); ?>
+
+
 <?php include(__DIR__ . '/partials/footer.php'); ?>

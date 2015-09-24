@@ -84,6 +84,9 @@ button, input, select, textarea {
 	&.small{
 		max-width:775px;
 	}
+	&.wide{
+		max-width:1200px;
+	}
 }
 
 
@@ -182,6 +185,8 @@ button, input, select, textarea {
 	display: inline-block;
 	margin-bottom:1px;
 	text-decoration: none;
+	position: relative;
+	text-align: left;
 	.transition(all, 0.4s);
 	&:hover{
 		text-decoration: none;
@@ -206,6 +211,7 @@ button, input, select, textarea {
 		background-image:url("../img/icon/arrow_right.svg");
 	  width: 16px;
 	  height: 26px;
+	  right:12px;
 	  margin-left: 10px;
 	  margin-top: 11px;
 	  background-repeat: no-repeat;
@@ -340,7 +346,7 @@ button, input, select, textarea {
 	}	
 	&.titleText{
 		h5{
-			height: 48px;
+			// height: 48px;
 		}
 		p{
 
@@ -434,6 +440,25 @@ button, input, select, textarea {
 		}
 		img{
 			top:30px;
+		}
+	}
+	&.center-icon{
+		img{
+			width:auto;
+			height:80px;
+			top:50%;
+			right:32px;
+			margin-top:-40px;
+		}
+	}
+	&.center-text{
+		h5,p{
+			margin-left:42px;
+		}
+	}
+	&.smaller-title{
+		h5{
+			width:140px !important;
 		}
 	}
 }
@@ -892,6 +917,10 @@ header{
 	min-height: 120px; 
 	position: relative;
 	padding-top:38px;
+	&.wide{
+		max-width:1024px;
+	}
+
 
 }
 
@@ -901,7 +930,10 @@ header{
 .space h4{
 	float:left;
 	color:@lightBlue;
-	font-size:1.5em
+	font-size:1.5em;
+	&.green{
+		color:@lightGreen;
+	}
 }
 
 
@@ -944,7 +976,9 @@ header{
 span.darkGreen{
 	color:@darkGreen;
 }
-
+span.textGray{
+	color:@textGray;
+}
 // ACCORDION
 @accordionWidth: 1024px;
 
@@ -1048,7 +1082,7 @@ span.darkGreen{
 	li{
 		display: table;
 		width:700px;
-		min-height:80px;
+		height:80px;
 		margin:20px auto;
 		padding:@padding;
 		position: relative;
@@ -1058,22 +1092,25 @@ span.darkGreen{
 		}
 		.border-radius(75px);
 		p{
-			padding-left:60 + @padding;
+			padding-left:6 + @padding;
+			padding-right:6px;
 			display: table-cell;
 			vertical-align: middle;
 			color:@darkGreen;
 			font-size:0.9em;
+			width:100%;
 		}
 		&::before{
 			display: block;
-			position: absolute;
+			// position: absolute;
 			background-color:@lightGreen;
 			line-height: 50px;
+			float:left;
 			text-align: center;
 			color:white;
 			font-size:1.2em;
-			left:@padding;
-			top:@padding;
+			left:13px;
+			top:15px;
 			width:50px;
 			height:50px;
 			.border-radius(50px);
@@ -1134,6 +1171,16 @@ span.darkGreen{
 			color:@lightGreen;
 		}
   }
+  &.spaced{
+  	margin-bottom:44px;
+  	li{
+  		margin:24px 0px 24px 42px;
+  		line-height: 2.1em;
+  		&:before{
+				margin: 0 18px 0 -32px;
+  		}
+  	}
+  }
 }
 ol.basic-list{
 	list-style-type: decimal;
@@ -1161,7 +1208,7 @@ form{
 		margin:8px 0px;
 	}
 	.bootstrap-select{
-		width:300px !important;
+		width:290px !important;
 		float:right !important;
 		&:focus{
 			outline:0 !important;
@@ -1180,7 +1227,7 @@ form{
 		border:1px solid @borderGray;
 		.border-radius(10px);
 		height:42px;
-		width:300px;
+		width:290px;
 		background-color:#ffffff;
 		display: inline-block;
 		margin:8px 0px;
@@ -1199,10 +1246,32 @@ form{
 		}
 	}
 	.form-column{
-		max-width:420px;
+		max-width:400px;
+		display: inline-block;
 		input, select, .bootstrap-select button{
 			float:right;
 		}
+	}
+	&.double-column{
+		label{
+			width:90px !important;
+		}
+		.bootstrap-select{
+			width:250px !important;
+		}
+		input, select, .bootstrap-select button{
+			width:250px;
+		}
+		.form-column{
+			max-width:350px;
+			display: inline-block;
+			input, select, .bootstrap-select button{
+				float:right;
+			}
+			&:nth-child(2){
+				float:right;
+			}
+		}		
 	}
 }
 .bootstrap-select .dropdown-toggle:focus{
@@ -1212,9 +1281,7 @@ form{
 
 
 
-.search-result{
 
-}
 
 
 
@@ -1247,6 +1314,10 @@ form{
 			}
 		}
 	}
+	h4{
+		font-size:1.6em;
+		margin-top:64px;
+	}
 	.listImg{
 		li{
 			border-top:1px solid @borderGray;
@@ -1269,7 +1340,49 @@ form{
 }
 
 
-
+.calendar-result{
+	width:100%;
+	margin:12px 0px;
+	tr{
+		border-bottom:1px solid @borderGray;
+		&:first-child{
+			border-bottom:1px solid @darkGreen;
+			height:36px;
+			font-size:1.2em;
+		}
+		&.section{
+			border-bottom:1px solid @lightGreen;
+			height:42px;
+			color:@lightGreen;
+			font-size:1.2em;
+			text-indent: 24px;
+			td{
+				padding:0px;
+			}
+		}
+		td{
+			padding:16px 0px;
+			span{
+				display: inline-block;
+				width:100%;
+				font-size: 1.1em;
+				margin:3px 0px;
+			}
+			p{
+				font-size:0.9em;
+				color:@textGray;
+			}
+			a{
+				color:@lightGreen;
+				display: inline-block;
+				margin:4px 0px;
+			}
+		}
+	}
+	th{
+		color:@darkGreen;
+	}
+}
 
 /* ///MISC */
 
@@ -1591,8 +1704,54 @@ form{
 /* ABOUT */
 
 
-/* ///ABOUT */
 
+
+
+
+/* ACTIONS */
+
+.logoSelect{
+	margin-top:0px;
+	margin-bottom:32px;
+}
+.logoSelect ul{
+	text-align:center;
+}
+.logoSelect ul li{
+	display: inline-block;
+	margin:32px 0px;
+	// padding:10px 0px;
+	width:182px;
+}
+.logoSelect ul li{
+	img,svg{
+		max-width:120px;
+		max-height:130px;
+		&.fullWidth{
+			max-width:90%;
+		}
+	}
+}
+
+.searchTitle{
+	margin:16px 0px;
+	svg{
+		width:24px;
+		height:24px;
+		display: inline-block;
+		vertical-align: middle;
+		margin-right:8px;
+		*{
+			fill:@lightGreen;
+		}
+	}
+	h3{
+		display: inline-block;
+		font-size:1.6em;
+		vertical-align: middle;
+	}
+}
+/* ///ACTIONS */
 
 
 /* RESPONSIVE */
@@ -1644,6 +1803,9 @@ form{
 		}
 
 	}
+	.space.wide{
+		margin:auto 48px;
+	}	
 }
 
 @media only screen and (max-width : 800px) {
@@ -1674,6 +1836,25 @@ form{
 }
 
 @media only screen and(max-width:767px){
+	.two-buttons{
+		text-align: center;
+		h4{
+			display: block;
+			float:none;
+			text-align:left;
+		}
+		.button{
+			float:none;
+			margin:12px auto;
+			// width:200px;
+			display: block !important;
+			max-width:220px;
+			&:first-child{
+				margin-top:40px;
+			}
+		}
+	}
+
 	.listImg{
 		>ul{
 			>li{
