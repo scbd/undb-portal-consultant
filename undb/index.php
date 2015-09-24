@@ -167,7 +167,7 @@
 			</ul>			
 
 			<ul class="col-xs-6 col-sm-4 col-md-2">
-				<li><a href="">Partners</a></li>
+				<li><a href="">Actors</a></li>
 				<li><a href="">ABTTF</a></li>
 				<li><a href="">Biodiversity Champions</a></li>
 				<li><a href="">BLG</a></li>

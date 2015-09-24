@@ -26,18 +26,38 @@
         	Diversity is often understood in terms of the wide variety of plants, animals and microorganisms. Approximately 1.75 million species have been identified; mostly small creatures such as insects. Many scientists, however, believe that there are actually about 13 million species, though estimates range from three to 100 million. Biodiversity also includes genetic differences within each species - for example, between varieties of crops and breeds of livestock. Chromosomes, genes, and DNA—the building blocks of life—determine the uniqueness of each individual and each species.
         </p>
 
-        <h4>Species Diversity</h4>
-        <p>
-        	Species diversity is often understood in terms of the wide variety of plants, animals and microorganisms. Approximately 1.75 million species, mostly small creatures such as insects, have been identified. However, the majority of scientists believe that there are actually about 13 million species, though estimates range from three to 100 million. 
-        </p>
-        <h4>Genetic Diversity</h4>
-        <p>
-        	Biodiversity also includes genetic differences within each species - for example, between varieties of crops and breeds of livestock. Chromosomes, genes and DNA—the building blocks of life—determine the uniqueness of each individual and each species.
-        </p>
-        <h4>Diversity of Ecosystems</h4>
-        <p>
-        	Another aspect of biodiversity is the variety of ecosystems, such as those that can be found in deserts, forests, wetlands, mountains, lakes, rivers, agricultural landscapes, oceans and coasts. In each ecosystem, living creatures, including humans, form a community, interacting with one another and with the air, water and soil that surround them. It is this combination of life forms and their interactions with each other, and with the rest of the environment, that has made Earth a uniquely habitable place for humans.
-        </p>
+
+
+        <h4>
+        	<a role="button" data-toggle="collapse" href="#collapseText1" aria-expanded="true" aria-controls="collapseText1">
+        		Species Diversity
+        	</a>
+        </h4>
+        <div class="collapse in" id="collapseText1">
+	        <p>
+	        	Species diversity is often understood in terms of the wide variety of plants, animals and microorganisms. Approximately 1.75 million species, mostly small creatures such as insects, have been identified. However, the majority of scientists believe that there are actually about 13 million species, though estimates range from three to 100 million. 
+	        </p>
+	     	</div>
+        <h4>
+        	<a role="button" data-toggle="collapse" href="#collapseText2" aria-expanded="true" aria-controls="collapseText2">
+        		Genetic Diversity
+        	</a>
+        </h4>	     	
+        <div class="collapse in" id="collapseText2">
+	        <p>
+	        	Biodiversity also includes genetic differences within each species - for example, between varieties of crops and breeds of livestock. Chromosomes, genes and DNA—the building blocks of life—determine the uniqueness of each individual and each species.
+	        </p>
+        </div>
+        <h4>
+        	<a role="button" data-toggle="collapse" href="#collapseText3" aria-expanded="true" aria-controls="collapseText3">
+        		Diversity of Ecosystems
+        	</a>
+        </h4>       
+        <div class="collapse in" id="collapseText3"> 
+	        <p>
+	        	Another aspect of biodiversity is the variety of ecosystems, such as those that can be found in deserts, forests, wetlands, mountains, lakes, rivers, agricultural landscapes, oceans and coasts. In each ecosystem, living creatures, including humans, form a community, interacting with one another and with the air, water and soil that surround them. It is this combination of life forms and their interactions with each other, and with the rest of the environment, that has made Earth a uniquely habitable place for humans.
+	        </p>
+        </div>
 
 
         <h3>The Value of Biodiversity and Ecosystem Services</h3>

@@ -25,7 +25,7 @@
 				<h5>Aichi Biodiversity Targets Task Force</h5>
 				<p>Suppoting the implementation of the Strategic Plan or Biodiversity</p>
 
-				<?php include(__DIR__ . '/img/icon/sea.svg'); ?>
+				<?php include(__DIR__ . '/img/icon/parent.svg'); ?>
 			</div>				
 		</a>
 
@@ -52,7 +52,7 @@
 				<h5>Biodiversity Champions</h5>
 				<p>Discover the pledges of the UNDB champions</p>
 
-				<?php include(__DIR__ . '/img/icon/parent.svg'); ?>
+				<?php include(__DIR__ . '/img/icon/sea.svg'); ?>
 			</div>				
 		</a>
 		
