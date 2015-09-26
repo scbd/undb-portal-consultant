@@ -22,7 +22,7 @@
 
 
 
-<div class="center small">
+<div class="center narrow">
 	<div class="listImg">
 		<ul>
 			<li>

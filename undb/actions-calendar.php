@@ -10,7 +10,7 @@
 
 
 <div class="wideBackground">
-	<div class="center small">
+	<div class="center narrow">
 		<div class="searchTitle">
 			<?php include(__DIR__ . '/img/icon/loupe.svg'); ?>
 			<h3>Search Criteria</h3>
@@ -50,7 +50,7 @@
 </div>
 
 
-<div class="search-result center small">
+<div class="search-result center narrow">
 	<div class="found col-xs-12 col-sm-6">2 results found</div>
 
 	<nav class="col-xs-12 col-sm-6">

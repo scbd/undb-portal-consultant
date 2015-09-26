@@ -13,7 +13,7 @@
 	</p>
 </div>
 
-<div class="logoSelect center small">
+<div class="logoSelect center narrow">
 	<ul>
 		<li>
 			<a href="">

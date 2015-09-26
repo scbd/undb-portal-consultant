@@ -23,8 +23,8 @@
 	<a href="" class="button green">Register your action</a>
 </div>
 
-<div class="center small">
-	<span class="darkGreen">See what’s happening in your country. Start typing a country’s name in the box or select a flag below.</span>
+<div class="center narrow">
+	<span class="darkGreen small">See what’s happening in your country. Start typing a country’s name in the box or select a flag below.</span>
 	<form>
 		<input type="text" placeholder="Country Name">
 	</form>

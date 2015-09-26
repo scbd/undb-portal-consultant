@@ -33,7 +33,7 @@
 
 
 
-<div class="center small">
+<div class="center narrow">
 	<div class="listImg">
 		<h3>The Biodiversity Champions and their pledges are :</h3>
 		<ul>

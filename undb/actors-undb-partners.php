@@ -35,7 +35,7 @@
 	<h3>Partners</h3>
 </div>
 <div class="wideBackground">
-	<div class="center small">
+	<div class="center narrow">
 		<form action="">
 			<div class="form-column">
 				<label for="input_country">Country:</label>
@@ -60,7 +60,7 @@
 
 
 
-<div class="search-result center small">
+<div class="search-result center narrow">
 	<div class="found col-xs-12 col-sm-6">Results <span class="darkGreen">1 to 25</span> of 167 results found</div>
 
 	<nav class="col-xs-12 col-sm-6">

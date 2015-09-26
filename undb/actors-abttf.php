@@ -54,7 +54,7 @@
 
 </div>
 
-<div class="center small">
+<div class="center narrow">
 	<div class="listImg">
 		<h3>The members of the ABTTF are:</h3>
 		<ul>
