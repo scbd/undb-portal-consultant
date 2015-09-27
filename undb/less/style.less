@@ -1476,6 +1476,7 @@ form{
 			height:200px;
 		}
 		.party{
+			text-align: left;
 			margin:24px 0px;
 			li{
 				margin:14px 0px;
@@ -1494,6 +1495,7 @@ form{
 			}
 		}
 		.links{
+			text-align: left;
 			li{
 				margin:8px 0px;
 				height:25px;
@@ -2045,6 +2047,36 @@ form{
 	}	
 }
 
+// for profile pages
+@media only screen and (max-width : 1050px) {
+	.profile-column{
+		max-width:100% !important;
+		width:100%;
+		text-align: center;
+		padding:5px !important;
+		>*{
+			display: inline-block !important;
+			vertical-align: top;
+			margin:15px 12px !important;
+		}
+		.party{
+			li:first-child{
+				margin-top:3px;
+			}
+		}
+		.links{
+			li:first-child{
+				margin-top:0px;
+			}
+		}		
+	}
+	.tab-content, .organization-content{
+		margin:24px auto !important;
+		float:none !important;
+		padding:10px !important;
+	}
+}
+
 @media only screen and (max-width : 800px) {
 	#logo{
 		width:100%;
@@ -2161,4 +2193,33 @@ form{
 
 }
 
+
+@media only screen and (max-width : 700px) {
+	.profile .nav{
+		li{
+			width:125px !important;
+			a{
+				width:125px !important;
+			}
+		}
+	}
+	.profile-column{
+		img{
+			display: block !important;
+			margin:12px auto !important;
+		}
+		ul{
+			margin:32px !important;
+		}
+	}
+
+}
+@media only screen and (max-width : 540px) {
+	.profile-column{
+		ul{
+			margin:12px !important;
+		}
+	}
+
+}
 /* ///RESPONSIVE */

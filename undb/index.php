@@ -3,7 +3,7 @@
 	<div id="welcome">
 		<div id="slider">
 		  <div>
-		  	<img src="/undb/img/slider/slider-1.png" alt="">
+		  	<img src="/undb/img/slider/slider-1.jpg" alt="">
 		  	<div class="sliderPopup">
 		  		<a href="#">
 		  			<h4>2015 is the Time for Global Action</h4>
