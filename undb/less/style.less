@@ -45,12 +45,15 @@ button, input, select, textarea {
 	font-family: inherit; 
 	font-size: 100%;
 }
-
+body{
+	overflow-y:scroll
+}
 /* ///RESET */
 
 /* VARIABLES */
 
 @bgGray:#fafafa;
+@whiteBorderGray:#f2f2f2;
 @borderGray:#e6e6e6;
 @whiteGray: #f9f9f9;
 @fairGray: #e5e5e5;
@@ -182,7 +185,7 @@ button, input, select, textarea {
 	height:37px;
 	line-height: 37px;
 	padding:0 36px 0px 22px;
-	display: inline-block;
+	display: block;
 	margin-bottom:1px;
 	text-decoration: none;
 	position: relative;
@@ -208,14 +211,20 @@ button, input, select, textarea {
 	}
 	&::after{
 		content:'';
-		background-image:url("../img/icon/arrow_right.svg");
+		background:url("../img/icon/arrow_right.svg") center no-repeat;
 	  width: 16px;
-	  height: 26px;
+	  height: 37px;
 	  right:12px;
 	  margin-left: 10px;
-	  margin-top: 11px;
-	  background-repeat: no-repeat;
 	  position: absolute;		
+	}
+	&.left{
+		text-align: right;
+		padding:0 22px 0px 36px;
+		&::after{
+			background:url("../img/icon/arrow_left.svg") center no-repeat;
+		  left:0px;
+		}		
 	}
 }
 
@@ -924,8 +933,13 @@ header{
 
 }
 
-.space .button{
-	float:right;
+.space{
+	.button{
+		float:right;
+		&.left{
+			float:left;
+		}
+	}
 }
 .space h4{
 	float:left;
@@ -973,10 +987,13 @@ header{
 .article p a{
 	color:@lightGreen;
 }
-span.darkGreen{
+.darkGreen{
 	color:@darkGreen;
 }
-span.textGray{
+.lightGreen{
+	color:@lightGreen;
+}
+.textGray{
 	color:@textGray;
 }
 // ACCORDION
@@ -1212,6 +1229,14 @@ ol.basic-list{
 	list-style-type: decimal;
 }
 
+.data-list{
+	margin:12px 0px;
+	li{
+		color:@textGray;
+		margin:8px 0px;
+		font-size:0.9em;
+	}
+}
 
 .wideBackground{
 	background-color:@bgGray;
@@ -1414,6 +1439,183 @@ form{
 		color:@darkGreen;
 	}
 }
+
+
+
+.profile{
+	.profile-border{
+		border:1px solid @whiteBorderGray;
+		overflow: hidden;
+	}
+	.article{
+		padding:0px;
+		p:first-child{
+			padding-top:0px;
+		}
+		h3{
+			margin-bottom:0px;
+			&:first-child{
+				margin-top:0px;
+			}
+		}
+		&.narrow{
+			p, h3{
+				width:575px;
+				float:left;			
+			}
+		}
+	}
+	.profile-column{
+		max-width:260px;
+		padding:30px;
+		display: inline-block;
+		>img{
+			display: block;
+			margin:0px auto;
+			width:200px;
+			height:200px;
+		}
+		.party{
+			margin:24px 0px;
+			li{
+				margin:14px 0px;
+				span{
+					font-size:0.75em;
+					text-align:left;
+					display: block;
+					&:first-child{
+						color:@lightGreen;
+						margin-bottom:4px;
+					}
+					&:last-child{
+						color:@textGray;
+					}
+				}
+			}
+		}
+		.links{
+			li{
+				margin:8px 0px;
+				height:25px;
+				width:100%;
+				a{
+					display:inline-block;
+					color:@lightGreen;
+					.www-icon{
+						font-size:0.9em;
+						font-weight: bold;
+					}
+					.at-icon{
+						font-weight: bold;
+						font-size:1.1em;
+					}
+					span{
+						display: inline-block;
+						text-align:center;
+						vertical-align: middle;
+						&:first-child{
+							width:33px;
+							margin-right:6px;
+						}
+						&:last-child{
+							font-size:0.9em;
+						}
+						svg{
+							width: 22px;
+							height:22px;
+							vertical-align: middle;
+							*{
+								fill:@lightGreen;
+							}
+						}
+					}
+					&:hover{
+						color:@lightBlue;
+						svg{
+							*{
+								fill:@lightBlue;
+							}
+						}
+					}
+				}				
+			}
+		}
+	}
+	h4{
+		font-size:1.4em;
+		margin-top:24px;
+	}
+	.nav{
+		border:none;
+		li{
+			width:216px;
+			height:38px;
+			margin:0px 3px;
+			a{
+				width:216px;
+				height:38px;
+				line-height: 38px;
+				background-color:@fairGray;
+				color:@textGray;
+				padding:0px;
+				text-align: center;
+				display: inline-block;
+				.border-radiuses(5px, 0px, 0px, 5px);	
+			}
+			&.active{
+				a{
+					background-color:@darkGreen;
+					color:#ffffff;
+				}
+			}					
+		}
+	}
+	.tab-content{
+		float:right;
+		margin:30px 22px;
+		padding:0px;
+		max-width:700px;
+	}
+	.listImg{
+		border-top:1px solid @lightGreen;
+		border-bottom:1px solid @lightGreen;
+		margin:12px 0px;
+		li{
+			border-top:1px solid @borderGray;
+			margin:0px auto;
+			padding:16px 5px;
+			h5{
+				color:@darkGreen;
+				font-size:1.0em;
+			}
+			a{
+				font-weight: 400;
+				margin-bottom:12px;
+				display: inline-block;
+				font-size:0.9em;
+			}
+			&:first-child{
+				border:none;
+			}
+		}
+	}	
+	&.organization{
+		.profile-column{
+			>img{
+				margin-bottom:24px;
+			}
+		}
+		.organization-content{
+			float:right;
+			max-width: 700px;
+			margin: 30px 22px;
+		}		
+	}
+// end .profile	
+}
+
+
+
 
 /* ///MISC */
 
