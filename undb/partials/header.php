@@ -144,6 +144,7 @@
             <li><a href="/undb/">Home</a></li>
             <li>
                 <a role="button" href="/undb/about-unbd.php">About</a>
+                <button type="button" class="arrow_open_submenu"></button>
                 <ul class="sub-menu">
                     <li><a href="/undb/about-unbd.php">UNDB</a></li>
                     <li><a href="/undb/about-goals.php">Goals</a></li>
@@ -154,6 +155,7 @@
             </li>
             <li>
                 <a role="button" href="/undb/actions-worldwide.php">Actions</a>
+                <button type="button" class="arrow_open_submenu"></button>
                 <ul class="sub-menu">
                     <li><a href="/undb/actions-worldwide.php">Worldwide</a></li>
                     <li><a href="/undb/actions-by-countries.php">By countries</a></li>
@@ -164,6 +166,7 @@
             </li>
             <li>
                 <a role="button" href="/undb/actors.php">Actors</a>
+                <button type="button" class="arrow_open_submenu"></button>
                 <ul class="sub-menu">
                     <li><a href="/undb/actors-abttf.php">ABTTF</a></li>
                     <li><a href="/undb/actors-biodiversity-champions.php">Biodiversity Champions</a></li>
@@ -174,6 +177,7 @@
             </li>
             <li>
                 <a role="button" href="/undb/resources.php">Resources</a>
+                <button type="button" class="arrow_open_submenu"></button>
                 <ul class="sub-menu">
                     <li><a href="/undb/resources-logo.php">Logo</a></li>
                     <li><a href="/undb/resources-printed-materials.php">Printed  materials</a></li>

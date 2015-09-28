@@ -94,11 +94,12 @@ $('.menu_arrow:not(.hide)').each(function(){
 
 
 // handling sub menus
-$("#siteMenu .dropdown-menu>li>a:after").click(function(e){
+$("#siteMenu .dropdown-menu>li>button").click(function(e){
 	 e.stopPropagation();
+	 e.preventDefault();
 
 	if($(this).siblings('ul').length > 0){
-		e.preventDefault();
+		
 		if($(this).parent('li').hasClass('open')){
 			$(this).parent('li').removeClass('open');
 		}

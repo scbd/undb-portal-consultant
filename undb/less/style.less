@@ -616,14 +616,14 @@ body{
 		text-align: center;
 		.border-radiuses(0px, 7px, 7px, 0px);
 		&::before{
-    content: '';
-    width: 24px;
-    display: block;
-    height: 24px;
-    background: url('../img/icon/fullarrow_up_lightBlue.svg');
-    position: absolute;
-    top: -12px;
-    right: 36px;
+	    content: '';
+	    width: 24px;
+	    display: block;
+	    height: 24px;
+	    background: url('../img/icon/fullarrow_up_lightBlue.svg');
+	    position: absolute;
+	    top: -12px;
+	    right: 36px;
 		}		
 		li{
 			display: inline-block;
@@ -663,32 +663,37 @@ body{
 		right:3px;
 		top: 41px;
 		width:365px;
-		padding:0px;
+		padding:10px 0px 0px 0px;
 		left:auto;
-		background-color:@gray;
+		background-color:@lightGreen;
 		border:none;
 		.border-radiuses(0px, 7px, 7px, 0px);
 		&::before{
-    content: '';
-    width: 24px;
-    display: block;
-    height: 24px;
-    background: url('../img/icon/fullarrow_up_lightGreen.svg');
-    position: absolute;
-    top: -12px;
-    right: 5px;
+	    content: '';
+	    width: 24px;
+	    display: block;
+	    height: 24px;
+	    background: url('../img/icon/fullarrow_up_lightGreen.svg');
+	    position: absolute;
+	    top: -12px;
+	    right: 5px;
 		}
 		>li{
 			background-color:@lightGreen;
+			position: relative;
 			
 			&.active a{
 				background-color:@darkGreen;
 			}
-			&.open>a{
-				border-left:8px solid @darkGreen;
-				&::after{
-					background: url('../img/icon/arrow_up.svg');
+			&.open{
+				>a{
+					border-left:8px solid @darkGreen;
 				}
+				>button{
+					background: url('../img/icon/arrow_up.svg') center center;
+					background-size: 15px 15px;
+					background-repeat: no-repeat;
+				}				
 			}
 			>a{
 				color:#ffffff;
@@ -696,23 +701,29 @@ body{
 				font-size:1.0em;
 				line-height: 40px;		
 				padding:0px 15px;
+				.transition(border-width, 0.4s);
 				&:hover{
 					background-color:lighten(@lightGreen, 2%);
 				}
-				&::after{
-			    content: '';
-			    display: block;
-			    width: 15px;
-			    height: 15px;
-			    background: url('../img/icon/arrow_down.svg');
-			    background-repeat: no-repeat;
-			    position: absolute;
-			    right: 15px;
-			    margin-top: -26px;
-				}
+
 				&:focus{
 					background-color:transparent;
 				}
+			}
+			>button{
+		    display: inline-block;
+		    width: 42px;
+		    height: 42px;
+		    background: url('../img/icon/arrow_down.svg') center center;
+		    background-size: 15px 15px;
+		    background-repeat: no-repeat;
+		    position: absolute;
+		    right: 0px;
+		    top:0px;
+		    margin:0px;
+		    &:hover{
+		    	border:1px solid @gray;
+		    }			
 			}
 			&.open{
 				.sub-menu{
@@ -726,8 +737,9 @@ body{
 			}
 		}
 		li.li-social{
-			background-color:transparent;
+			background-color:@gray;
 			height:auto;
+			.border-radiuses(0px, 7px, 7px, 0px);
 		}
 
 		.sub-menu{
