@@ -187,4 +187,19 @@ s.each(function(){
 
 /* ///FORMS */
 
+
+
+
+
+/* CHECKBOX */
+	
+	$('.checkbox>.box:not(.radio)').click(function(){
+		$(this).toggleClass('checked');
+	});
+
+	$('.checkbox>.box.radio').click(function(){
+		$(this).siblings('.box').removeClass('selected');
+		$(this).addClass('selected');
+	});
+/* ///CHECKBOX */
 });

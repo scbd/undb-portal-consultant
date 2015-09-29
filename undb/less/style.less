@@ -10,6 +10,8 @@
 // - MISC
 // - FOOTER
 // - HOME
+// - ACTIONS
+// - FORMS
 // - RESPONSIVE
 
 
@@ -61,6 +63,8 @@ body{
 @textGray:#666666;
 @mediumGray: #3f3b3a;
 
+
+@orange:#e98026;
 
 @lightGray: #bdbdbd;
 @darkGray: #959595;
@@ -925,6 +929,13 @@ header{
 
 /* MISC */
 
+
+a{
+	color:@lightGreen;
+	&:hover{
+		color:@lightGreen;
+	}
+}
 .button{
 	.arrowButton(@lightGreen);
 }
@@ -1259,91 +1270,6 @@ ol.basic-list{
 
 
 
-// form style
-form{
-	margin:10px 0px;
-	label{
-		width:110px;
-		text-align: left;
-		height:42px;
-		float:left;
-		line-height: 42px;
-		margin:8px 0px;
-		font-size:0.9em;
-	}
-	.bootstrap-select{
-		width:290px !important;
-		float:right !important;
-		&:focus{
-			outline:0 !important;
-			border:1px solid @lightGreen;
-		}
-		.caret{
-			border:none;
-			background:url('../img/icon/round-arrow_down.svg') no-repeat;
-			width:10px;
-			height:10px;
-			margin-top: -4px !important;
-			right:14px !important;
-		}
-	}
-	input, select, .bootstrap-select button{
-		border:1px solid @borderGray;
-		.border-radius(10px);
-		height:42px;
-		width:290px;
-		background-color:#ffffff;
-		display: inline-block;
-		margin:8px 0px;
-		padding:6px 12px;
-		&:focus{
-			outline:0 !important;
-			border:1px solid @lightGreen;
-		}
-		&[type=submit]{
-			background-color:@lightGreen;
-			color:white;
-			&:focus{
-				outline:0;
-				border:1px solid @darkGreen;
-			}			
-		}
-	}
-	.form-column{
-		max-width:400px;
-		overflow: hidden;
-		input, select, .bootstrap-select button{
-			float:right;
-		}
-	}
-	&.double-column{
-		label{
-			width:98px !important;
-		}
-		.bootstrap-select{
-			width:250px !important;
-		}
-		input, select, .bootstrap-select button{
-			width:250px;
-		}
-		.form-column{
-			max-width:350px;
-			width:350px;
-			input, select, .bootstrap-select button{
-				float:right;
-			}
-			// &:nth-child(2){
-			// 	float:right;
-			// }
-		}		
-	}
-}
-.bootstrap-select .dropdown-toggle:focus{
-	outline:none !important;
-	border:1px solid @lightGreen;
-}
-
-
 
 
 
@@ -1630,6 +1556,43 @@ form{
 
 
 
+.checkbox{
+	font-size:.9em;
+	vertical-align: middle;
+	line-height: 1.9em;
+	padding:5px;
+	&.agreement{
+		font-weight: bold;
+	}
+	.box{
+		border:2px solid @darkGreen;
+		.border-radius(4px);
+		height:22px;
+		width:22px;
+		display: inline-block;
+		vertical-align: middle;
+		margin:0px 8px 0px 0px;
+		cursor:pointer;
+
+		// to avoir getting a selection while clicking
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;		
+		&.checked{
+			background:url('../img/icon/check.svg') no-repeat;
+			background-position: center center;
+			background-size:80%;
+		}
+		&.selected{
+			background:url('../img/icon/circle.svg') no-repeat;
+			background-position: center center;
+			background-size:80%;
+		}		
+	}
+}
 
 /* ///MISC */
 
@@ -1948,8 +1911,6 @@ form{
 /* ///HOME */
 
 
-/* ABOUT */
-
 
 
 
@@ -1999,6 +1960,267 @@ form{
 	}
 }
 /* ///ACTIONS */
+
+
+
+
+/* FORMS */
+
+form{
+	margin:10px 0px;
+	label{
+		text-align: left;
+		height:42px;
+		line-height: 42px;
+		font-size:0.9em;
+	}
+	&.double-column{
+		label{
+			width:110px;
+			text-align: left;
+			height:42px;
+			float:left;
+			line-height: 42px;
+			margin:8px 0px;
+			font-size:0.9em;
+		}		
+		.bootstrap-select{
+			width:290px !important;
+			float:right !important;
+		}
+	}
+	.bootstrap-select{
+		&:focus{
+			outline:0 !important;
+			border:1px solid @lightGreen;
+		}
+		.caret{
+			border:none;
+			background:url('../img/icon/round-arrow_down.svg') no-repeat;
+			width:10px;
+			height:10px;
+			margin-top: -4px !important;
+			right:14px !important;
+		}
+	}
+	input, select, .bootstrap-select button{
+		border:1px solid @borderGray;
+		.border-radius(10px);
+		height:42px;
+		width:290px;
+		background-color:#ffffff;
+		display: inline-block;
+		margin:8px 0px;
+		padding:6px 12px;
+		&:focus{
+			outline:0 !important;
+			border:1px solid @lightGreen;
+		}
+		&[type=submit]{
+			background-color:@lightGreen;
+			color:white;
+			&:focus{
+				outline:0;
+				border:1px solid @darkGreen;
+			}			
+		}
+	}
+	textarea{
+		border:1px solid @borderGray;
+		.border-radius(10px);
+		height:108px;
+		max-width:500px;
+		background-color:#ffffff;
+		display: inline-block;
+		margin:8px 0px;
+		height:108px;
+		padding:15px;		
+		&:focus{
+			outline:0 !important;
+			border:1px solid @lightGreen;
+		}
+		&.long{
+			height: 230px;
+		}
+	}
+	.form-column{
+		max-width:400px;
+		overflow: hidden;
+		input, select, .bootstrap-select button{
+			float:right;
+		}
+	}
+	&.double-column{
+		label{
+			width:98px !important;
+		}
+		.bootstrap-select{
+			width:250px !important;
+		}
+		input, select, .bootstrap-select button{
+			width:250px;
+		}
+		.form-column{
+			max-width:350px;
+			width:350px;
+			input, select, .bootstrap-select button{
+				float:right;
+			}
+			// &:nth-child(2){
+			// 	float:right;
+			// }
+		}		
+	}
+}
+.bootstrap-select .dropdown-toggle:focus{
+	outline:none !important;
+	border:1px solid @lightGreen;
+}
+
+@elementsWidth:465px;
+form.single{
+	color:@textGray;
+	label{
+		width:228px;
+		text-align: right;
+		float:left;
+		margin:6px 0px;
+		&.big{
+			text-align: left;
+			line-height: 1.5em;
+			overflow: hidden;
+			height:auto;
+			display: block;
+			margin:12px 0px 0px;
+			&.small-margin{
+				margin:4px 0px 0px;
+			}
+		}
+
+	}
+	input[type="text"], input[type="email"], select, .bootstrap-select{
+		margin:6px 0px 6px 24px !important;
+		height:42px;
+		&.invalid{
+			border:1px solid @orange;
+		}
+		&.wide{
+			width:@elementsWidth;
+		}
+	}
+	button.browseFile{
+		width: 104px;
+		background-color:@textGray;
+		color:#ffffff;
+		.border-radius(10px);
+		height:42px;
+		display: inline-block;
+		line-height: 42px;
+		text-align: center;
+		border:none;
+		margin-left:6px;
+	}
+	input[type="submit"]{
+		margin:24px 0px 24px 24px;
+		&.invalid{
+			background-color:@orange;
+		}
+	}
+	textarea{
+		margin:6px 0px 6px 24px !important;
+		width:@elementsWidth;
+	}
+	.bootstrap-select button{
+		margin:0px;
+	}
+	.checkbox{
+		margin-left:24px;
+		margin-right:50px;
+		display: inline-block;
+		.box{
+			border-color:@borderGray;
+		}
+		&.gender{
+			margin-left:214px;
+			display: block;
+			.box{
+				margin:0px 24px 0px 10px;
+			}
+		}
+		&.single{
+			width:@elementsWidth;
+			margin-right:0px;
+		}
+		+label+.single{
+			// margin-top:0px;
+		}
+	}
+	.inlineInputs{
+		display: inline-block;
+		width:@elementsWidth;
+		height:42px;
+		margin:6px 24px;
+		label{
+			width:50px;
+			display: inline-block;
+			margin:0px;
+			float:none;
+			&:nth-of-type(1){
+				text-align: left;
+			}			
+			&:nth-of-type(2){
+				text-align: center;
+			}
+		}
+		input{
+			width:170px;
+			display: inline-block;
+			margin:0px !important;
+		}
+	}
+	.required{
+		&:before{
+			content:'* ';
+		}
+	}
+	.formContainer{
+		overflow: hidden;
+	}
+	.errorMessage{
+		color:@orange;
+		width:100%;
+		max-width:500px;
+		float:right;
+		font-size:0.9em;
+		display: block;
+		padding:5px;
+		margin:12px 0px;
+	}	
+
+	.successMessage{
+		max-width:500px;
+		width:100%;
+		float:right;
+		font-size:1em;
+		display: block;
+		padding:5px;	
+		margin:12px 0px;
+		h6{
+			display: block;
+			text-align: left;
+			color:@lightGreen;
+			font-size:1.3em;
+			margin:0px;
+		}	
+		p{
+			margin:0px 0px 24px 0px;
+			padding:2px 0px;
+		}
+	}
+}
+
+
+/* ///FORMS */
 
 
 /* RESPONSIVE */
@@ -2192,7 +2414,50 @@ form{
 		display: block;
 		float:none;
 	}
-	
+
+	@elementsWidth:465px;
+	form.single{
+		margin:24px auto;
+		max-width:500px;
+		label{
+			float:none;
+			display: block;
+			text-align: left;
+			margin:0px;
+			padding-left:12px;
+			&.blank{
+				display: none !important;
+			}
+			&.big{
+				max-width:400px;
+				width:auto;
+			}
+		}
+		input[type="text"], input[type="email"], select, .bootstrap-select{
+			margin:0px 0px 12px 6px !important;
+		}
+		.browseFile{
+			margin-top:6px;
+		}
+		input[type="submit"]{
+			margin:24px auto !important;
+			display: block;
+		}
+		textarea{
+			margin:6px 0px !important;
+		}
+		.checkbox{
+			margin:0px 0px 12px 12px !important;
+		}
+		.inlineInputs{
+				width:auto;
+				margin:0px;
+		}
+
+
+	}
+
+// end media max-width:767px 
 }
 
 @media only screen and(min-width:768px){
@@ -2231,6 +2496,19 @@ form{
 		ul{
 			margin:12px !important;
 		}
+	}
+
+}
+@media only screen and (max-width : 500px) {
+	form.single{
+		.inlineInputs{
+				width:250px;
+				height:auto;
+				margin:12px auto !important;
+				overflow: hidden;
+				display: block;
+		}
+
 	}
 
 }
