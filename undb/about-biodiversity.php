@@ -200,8 +200,8 @@
       </div>
     </div>
   </div>
-  <div class="panel panel-default">
-	  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+  <div class="panel panel-default ">
+	  <a role="button" class="" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 	    <div class="panel-heading" role="tab" id="headingThree">
 	    	<img src="/undb/img/article/3.png" alt="">
 	    	<div class="accordionTitle">

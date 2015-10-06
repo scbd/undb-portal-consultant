@@ -96,7 +96,7 @@
 			</td>
 			<td>
 				<p>Fifth meeting of the Liaison Group on the Global Strategy for Plant Conservation</p>
-				<a href="#">» Documents</a>
+				<a href="/undb/profile-event.php">» Documents</a>
 			</td>
 		</tr>
 
@@ -108,7 +108,7 @@
 			</td>
 			<td>
 				<p>Fifth meeting of the Liaison Group on the Global Strategy for Plant Conservation</p>
-				<a href="#">» Documents</a>
+				<a href="/undb/profile-event.php">» Documents</a>
 			</td>
 		</tr>		
 	</table>

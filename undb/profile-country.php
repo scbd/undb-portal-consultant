@@ -6,7 +6,8 @@
 <div class="center profile">
 		
 		<div class="flag">
-			<img src="" alt="">
+			<img src="/undb/img/flag/World-Flags-cc-30.svg" alt="">
+			<!-- <img src="/undb/img/flag/World-Flags-cc-53.svg" alt=""> -->
 			<h1>Canada</h1>
 		</div>
 

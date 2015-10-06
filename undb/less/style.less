@@ -50,6 +50,9 @@ button, input, select, textarea {
 body{
 	overflow-y:scroll
 }
+a:focus, a:hover {
+	text-decoration: none;
+}
 /* ///RESET */
 
 /* VARIABLES */
@@ -1032,6 +1035,32 @@ a{
 	height:112px;
 	.transition(all, 0.4s);
 }
+.panel.stick{
+	@height:60px;
+	height:@height;
+	>a{
+		height:@height;
+		width:100%;
+		max-width:@accordionWidth - 20px;		
+		position: fixed;
+		// bottom: 0px;
+		z-index:10;
+		>div{
+			height:@height;
+			.accordionTitle{
+				height:@height;
+				// remove padding to get original one
+				padding:20px 40px; 
+			}
+		}
+	}
+	&:nth-child(3) >a{
+		bottom:0px
+	}	
+	&:nth-child(2) >a{
+		bottom:@height + 2px
+	}		
+}
 .panel-group  a[aria-expanded=true] .panel-heading{
 	height:335px;
 } 
@@ -1381,6 +1410,25 @@ ol.basic-list{
 
 
 .profile{
+	.flag{
+		margin:32px 0px;
+		height:64px;
+		img{
+			max-width:90px;
+			max-height: 64px;
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 64px;
+		}
+		h1{
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 64px;
+			color:@textGray;
+			font-size:2.3em;
+			margin-left:24px;
+		}
+	}
 	.profile-border{
 		border:1px solid @whiteBorderGray;
 		overflow: hidden;
@@ -1554,6 +1602,48 @@ ol.basic-list{
 // end .profile	
 }
 
+
+.listCountries{
+	li{
+		margin:12px 0px;
+		padding:0px 4px;
+		display: inline-block;
+		a{
+			display: inline-block;
+			width:100%;
+			height:72px;
+			vertical-align: middle;
+			position: relative;
+			line-height: 72px;
+			img{
+				display: inline-block;
+				max-width:54px;
+				max-height: 34px;
+				vertical-align: middle;
+			}
+			div{
+				display: table;
+				height:100%;
+				width:110px;
+				position: absolute;
+				top:0px;
+				left:70px;
+				span{
+					display: table-cell;
+					height:34px;
+					vertical-align: middle;
+					color:@lightGreen;
+					font-size:0.9em;
+					line-height: 1.2em;
+					// margin-left:12px;
+				}
+			}
+			&:hover{
+				border-bottom:4px solid @lightGreen;
+			}
+		}
+	}
+}
 
 
 .checkbox{
@@ -2310,7 +2400,9 @@ form.single{
 		padding:10px !important;
 	}
 }
+@media only screen and (max-width: 991px){
 
+}
 @media only screen and (max-width : 800px) {
 	#logo{
 		width:100%;
@@ -2467,16 +2559,20 @@ form.single{
 			float:right !important;
 		}
 	}
-
 }
 
 
 @media only screen and (max-width : 700px) {
-	.profile .nav{
-		li{
-			width:125px !important;
-			a{
+	.profile{ 
+		.flag{
+			text-align: center;
+		}
+		.nav{
+			li{
 				width:125px !important;
+				a{
+					width:125px !important;
+				}
 			}
 		}
 	}
@@ -2509,6 +2605,16 @@ form.single{
 				display: block;
 		}
 
+	}
+
+}
+
+// special media query for .stick(ed) accordions
+@media only screen and (max-height : 600px) {
+	.panel.stick{
+		>a{
+			position: relative;
+		}
 	}
 
 }

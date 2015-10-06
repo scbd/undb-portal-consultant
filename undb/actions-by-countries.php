@@ -28,6 +28,105 @@
 	<form>
 		<input type="text" placeholder="Country Name">
 	</form>
+
+	<ul class="listCountries">
+		<li class="col-md-3 col-sm-4 col-xs-6">
+			<a href="/undb/profile-country.php">
+				<img src="/undb/img/flag/World-Flags-cc-02.svg" alt="">
+				<div><span>Afghanistan</span></div>
+			</a>
+		</li>
+		<li class="col-md-3 col-sm-4 col-xs-6">
+			<a href="/undb/profile-country.php">
+				<img src="/undb/img/flag/World-Flags-cc-03.svg" alt="">
+				<div><span>Bahamas Nassau</span></div>
+			</a>
+		</li>
+		<li class="col-md-3 col-sm-4 col-xs-6">
+			<a href="/undb/profile-country.php">
+				<img src="/undb/img/flag/World-Flags-cc-04.svg" alt="">
+				<div><span>Cambodia</span></div>
+			</a>
+		</li>
+		<li class="col-md-3 col-sm-4 col-xs-6">
+			<a href="/undb/profile-country.php">
+				<img src="/undb/img/flag/World-Flags-cc-05.svg" alt="">
+				<div><span>Democratic Republic of the Congo</span></div>
+			</a>
+		</li>
+		<li class="col-md-3 col-sm-4 col-xs-6">
+			<a href="/undb/profile-country.php">
+				<img src="/undb/img/flag/World-Flags-cc-06.svg" alt="">
+				<div><span>Gabon</span></div>
+			</a>
+		</li>
+		<li class="col-md-3 col-sm-4 col-xs-6">
+			<a href="/undb/profile-country.php">
+				<img src="/undb/img/flag/World-Flags-cc-53.svg" alt="">
+				<div><span>Belgium</span></div>
+			</a>
+		</li>		
+		<li class="col-md-3 col-sm-4 col-xs-6">
+			<a href="/undb/profile-country.php">
+				<img src="/undb/img/flag/World-Flags-cc-08.svg" alt="">
+				<div><span>Laos</span></div>
+			</a>
+		</li>
+		<li class="col-md-3 col-sm-4 col-xs-6">
+			<a href="/undb/profile-country.php">
+				<img src="/undb/img/flag/World-Flags-cc-09.svg" alt="">
+				<div><span>Macedonia</span></div>
+			</a>
+		</li>
+		<li class="col-md-3 col-sm-4 col-xs-6">
+			<a href="/undb/profile-country.php">
+				<img src="/undb/img/flag/World-Flags-cc-01.svg" alt="">
+				<div><span>Namibia</span></div>
+			</a>
+		</li>		
+		<li class="col-md-3 col-sm-4 col-xs-6">
+			<a href="/undb/profile-country.php">
+				<img src="/undb/img/flag/World-Flags-cc-11.svg" alt="">
+				<div><span>Pakistan</span></div>
+			</a>
+		</li>
+		<li class="col-md-3 col-sm-4 col-xs-6">
+			<a href="/undb/profile-country.php">
+				<img src="/undb/img/flag/World-Flags-cc-12.svg" alt="">
+				<div><span>Saint Kitts & Nevis</span></div>
+			</a>
+		</li>
+		<li class="col-md-3 col-sm-4 col-xs-6">
+			<a href="/undb/profile-country.php">
+				<img src="/undb/img/flag/World-Flags-cc-13.svg" alt="">
+				<div><span>South Korea</span></div>
+			</a>
+		</li>
+		<li class="col-md-3 col-sm-4 col-xs-6">
+			<a href="/undb/profile-country.php">
+				<img src="/undb/img/flag/World-Flags-cc-14.svg" alt="">
+				<div><span>Taiwan</span></div>
+			</a>
+		</li>
+		<li class="col-md-3 col-sm-4 col-xs-6">
+			<a href="/undb/profile-country.php">
+				<img src="/undb/img/flag/World-Flags-cc-15.svg" alt="">
+				<div><span>Tajikistan</span></div>
+			</a>
+		</li>
+		<li class="col-md-3 col-sm-4 col-xs-6">
+			<a href="/undb/profile-country.php">
+				<img src="/undb/img/flag/World-Flags-cc-16.svg" alt="">
+				<div><span>Spain</span></div>
+			</a>
+		</li>
+		<li class="col-md-3 col-sm-4 col-xs-6">
+			<a href="/undb/profile-country.php">
+				<img src="/undb/img/flag/World-Flags-cc-17.svg" alt="">
+				<div><span>Saint Lucia</span></div>
+			</a>
+		</li>
+	</ul>
 </div>
 
 <?php include(__DIR__ . '/partials/footer.php'); ?>

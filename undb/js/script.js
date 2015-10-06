@@ -160,17 +160,31 @@ $('#map .sideSelection ul li').click(function(){
 
 /* ACCORDION */
 
-var s = $(".accordion a[aria-expanded=false]");
-s.each(function(){
-	var pos = $(this).offset().top+$(this).height(); //offset that you need is actually the div's top offset + it's height
-	$(window).scroll(function() {
-	    var windowpos = $(window).scrollTop(); //current scroll position of the window
-	    var windowheight = $(window).height(); //window height
-	    if (windowpos+windowheight>pos) $(this).addClass('stick'); //Currently visible part of the window > greater than div offset + div height, add class
-	    else $(this).removeClass('stick');
-	});
+function accordionFollowers(){
+	if($(document).height() - $(window).scrollTop() - $(window).height() > 300){
+		$(".accordion a[aria-expanded=true]").parent('.panel').nextAll().addClass('stick');	
+	}
+	else{
+		$('.panel.stick').removeClass('stick');
+	}
+}
 
-})
+// init
+accordionFollowers();
+
+
+$(".panel").on('click', '> a[aria-expanded=true]', function(){
+	$('.panel.stick').removeClass('stick');
+});
+$(".panel").on('click', '> a[aria-expanded=false]', function(){
+	$('.panel.stick').removeClass('stick');
+	$(this).parent('.panel').nextAll().addClass('stick');
+	$("html, body").animate({ scrollTop: 0 }, 200);
+});
+$(window).on('scroll', function(){
+	accordionFollowers();
+});
+
 
 
 /* ///ACCORDION */
