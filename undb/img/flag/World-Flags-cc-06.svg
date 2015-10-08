@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 44.2 33.2" enable-background="new 0 0 44.2 33.2" xml:space="preserve">
+<g>
+	<path fill="#FFFFFF" d="M-18,82.9h79.5c3.1,0,5.7-2.6,5.7-5.7V-59c0-3.1-2.6-5.7-5.7-5.7H-18c-3.1,0-5.7,2.6-5.7,5.7V77.3
+		C-23.7,80.4-21.1,82.9-18,82.9z"/>
+	<path fill="none" stroke="#EDEDED" stroke-width="0.5" stroke-miterlimit="10" d="M-18,82.9h79.5c3.1,0,5.7-2.6,5.7-5.7V-59
+		c0-3.1-2.6-5.7-5.7-5.7H-18c-3.1,0-5.7,2.6-5.7,5.7V77.3C-23.7,80.4-21.1,82.9-18,82.9z"/>
+	<polygon fill="#009E60" points="44.1,33.1 44.1,33.1 0.1,33.1 0.1,22.1 0.1,11.1 0.1,0.1 44.1,0.1 44.1,11.1 44.1,22.1 44.1,33.1 	
+		"/>
+	<path d="M44.1,0.1v11v11v11h-44v-11v-11v-11H44.1 M44.2,0h-0.1h-44H0v0.1v11v11v11v0.1h0.1h44h0.1v-0.1v-11v-11v-11V0z"/>
+	<rect x="0.1" y="11.1" fill="#FFD20B" width="44" height="11"/>
+	<rect x="0.1" y="22.1" fill="#2A71B8" width="44" height="11"/>
+</g>
+</svg>

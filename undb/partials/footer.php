@@ -1,8 +1,8 @@
-<footer id="footer">
+<footer id="footer" class="center wide">
 	<ul>
 		<li><a href="/undb/">CBD</a></li>
 		<li><a href="//un.org">UN</a></li>
-		<li><a href="">Contact us</a></li>
+		<li><a href="mailto:UNBiodiversity@cbd.int">Contact us</a></li>
 		<li><a href="">Privacy Policy</a></li>
 	</ul>
 
