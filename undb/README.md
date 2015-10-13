@@ -26,6 +26,7 @@ The CSS file is compiled using less. The file has a table of content on the top:
 
 ## Javascript
 A single, simple and commented script.js file is used. Sections are highlighted the same way as in CSS:
+
 `// Each section starts with /* NAME */ and ends with /* ///NAME */`
 
 ## Libraries used
