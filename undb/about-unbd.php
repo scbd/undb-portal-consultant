@@ -35,7 +35,7 @@
 </div>
 
 <div class="space">
-	<a href="" class="button green">Goals</a>
+	<a href="/undb/about-goals.php" class="button green">Goals</a>
 </div>
 
 

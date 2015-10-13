@@ -43,7 +43,7 @@
 		</div>				
 	</a>		
 
-	<a href="#" class="linkBlock green titleText medium center-icon mediumText">
+	<a href="/undb/register-form.php" class="linkBlock green titleText medium center-icon mediumText">
 		<div>
 			<h5>Register your action</h5>
 			<p></p>
@@ -52,7 +52,7 @@
 		</div>				
 	</a>		
 
-	<a href="#" class="linkBlock green titleText medium center-icon smaller-title">
+	<a href="/undb/partnership-form.php" class="linkBlock green titleText medium center-icon smaller-title">
 		<div>
 			<h5>Become a UNDB Partner</h5>
 			<p></p>
