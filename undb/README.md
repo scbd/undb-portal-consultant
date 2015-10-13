@@ -24,6 +24,7 @@ The CSS file is compiled using less. The file has a table of content on the top:
 - Open a terminal in this folder
 - Run *npm install* (package.js have everything needed)
 - Run *grunt*
+
 grunt will now watch for any changes in the style.less file and compile it to style.css
 
 ## Javascript
