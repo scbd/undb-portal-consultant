@@ -1,5 +1,6 @@
 	<?php include(__DIR__ . '/partials/header.php'); ?>
 		
+<div id="welcome_wrapper">	
 	<div id="welcome">
 		<div id="slider">
 		  <div>
@@ -46,6 +47,8 @@
 			</div>
 		</div>
 	</div>
+</div>
+
 	<div class="space wide two-buttons">
 		<h4 class="green">UNDB Network</h4>
 		<a href="" class="button green visible-xs">Interactive Map</a>

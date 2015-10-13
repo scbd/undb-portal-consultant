@@ -20,7 +20,7 @@
 </div>
 
 <div class="space">
-	<a href="" class="button green">Register your action</a>
+	<a href="/undb/register-form.php" class="button green">Register your action</a>
 </div>
 
 <div class="center narrow">

@@ -4,7 +4,7 @@
 <div class="center article">
 	<h1>Calendar</h1>
 	<p>
-		This calendar contains all actions happening during the United Nations Decade on biodiversity. If you would like your action included, please <a href="">register</a> it by filling the form or <a href="mailto:UNBiodiversity@cbd.int">contact us</a>.
+		This calendar contains all actions happening during the United Nations Decade on biodiversity. If you would like your action included, please <a href="/undb/register-form.php">register</a> it by filling the form or <a href="mailto:UNBiodiversity@cbd.int">contact us</a>.
 	</p>
 </div>
 

@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 /* MENU */
 
-// hiding secondary menu from 
+// hiding secondary menu from home
 if(window.location.pathname == '/undb/'){
 	$("#secondary").hide();
 	$('#main ul.menu_arrow li:eq(0), #siteMenu .dropdown-menu>li:eq(0)').addClass('active');
@@ -16,7 +16,7 @@ if(window.location.pathname.indexOf('about') > 0){
 	$('#main ul.menu_arrow li:eq(1), #siteMenu .dropdown-menu>li:eq(1)').addClass('active');
 
 }
-if(window.location.pathname.indexOf('actions') > 0){
+if(window.location.pathname.indexOf('actions') > 0 || window.location.pathname.indexOf('profile') > 0){
 	$("#secondary .actions-menu").removeClass('hide');
 	$('#main ul.menu_arrow li:eq(2), #siteMenu .dropdown-menu>li:eq(2)').addClass('active');
 }
@@ -30,10 +30,21 @@ if(window.location.pathname.indexOf('resources') > 0){
 }
 
 // active state for secondary menu links
-var selectedLink = $('#secondary  .menu_arrow li a[href="' + window.location.pathname + '"]');
+var selectedLink = $('#secondary .menu_arrow li a[href="' + window.location.pathname + '"]');
 if(selectedLink.length > 0){
-	$('#secondary .menu_arrow li a[href="' + window.location.pathname + '"]').parent('li').addClass('active');
-	$('.dropdown-menu li a[href="' + window.location.pathname + '"]').parent('li').addClass('active');
+	$('#secondary .menu_arrow li a[href="' + window.location.pathname + '"], .dropdown-menu li a[href="' + window.location.pathname + '"]').parent('li').addClass('active');
+}
+else if(window.location.pathname.indexOf('profile') > 0){
+	if(window.location.pathname.indexOf('country') > 0){
+		$('#secondary .menu_arrow li a[href="/undb/actions-by-countries.php"], .dropdown-menu li a[href="/undb/actions-by-countries.php"]').parent('li').addClass('active');	
+	}
+	if(window.location.pathname.indexOf('organization') > 0){
+		$('#secondary .menu_arrow li a[href="/undb/actions-by-un-organizations.php"], .dropdown-menu li a[href="/undb/actions-by-countries.php"]').parent('li').addClass('active');	
+	}
+	if(window.location.pathname.indexOf('event') > 0){
+		$('#secondary .menu_arrow li a[href="/undb/actions-calendar.php"], .dropdown-menu li a[href="/undb/actions-by-countries.php"]').parent('li').addClass('active');	
+	}	
+
 }
 else{
 	$("#secondary .arrow_slider_wrapper").hide()
@@ -123,6 +134,16 @@ $(window).resize(function(){
 	$('.dropdown-menu li.open').removeClass('open');
 });
 
+
+
+// activate darkbox
+$('.dropdown').on('show.bs.dropdown', function () {
+  $('.darkbox').addClass('open');
+})
+// deactivate darkbox
+$('.dropdown').on('hide.bs.dropdown', function () {
+  $('.darkbox').removeClass('open');
+})
 
 /* ////MENU */
 
