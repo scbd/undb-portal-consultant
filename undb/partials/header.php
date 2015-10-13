@@ -209,8 +209,10 @@
             <li><a href="">中文</a></li>
         </ul>
     </div>
-    <div class="darkbox"></div>  
+    <!-- <div class="darkbox"></div>   -->
 </div>
+<div class="darkbox" style="top:0px"></div>  
+
 <header>
     <div id="logo">
         <a href="//un.org"><img src="/undb/img/logo/un.svg" alt=""></a>

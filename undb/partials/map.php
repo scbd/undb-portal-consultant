@@ -1,3 +1,4 @@
+<div id="map_wrapper">
 <div id="map">
 	<div class="centerREMOVE">
 		<div class="sideSelection col-md-3">
@@ -38,4 +39,5 @@
 		</div>	
 
 	</div>		
+</div>
 </div>

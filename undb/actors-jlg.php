@@ -48,7 +48,7 @@
 			</li>
 			<li>
 				<div class="col-sm-3">
-					<img src="/undb/img/logo/UN-FCCC.png" alt="">
+					<img src="/undb/img/logo/UN-fccc.png" alt="">
 				</div>
 				<div class="col-sm-9">
 					<h4>United Nations Framework Convention on Climate Change (UNFCCC)</h4>

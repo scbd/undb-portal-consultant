@@ -13,7 +13,7 @@
 
 
 <div class="blocksHub center">
-		<div class="linkBlock green downloadLanguage medium">
+		<div class="linkBlock green downloadLanguage medium mediumText">
 			<div>
 				<h5>Strategic Plan for Biodiversity 2011-2020</h5>
 				<p></p>
@@ -98,7 +98,7 @@
 			</div>	
 		</div>		
 
-		<div class="linkBlock green downloadLanguage medium">
+		<div class="linkBlock green downloadLanguage medium mediumText">
 			<div>
 				<h5>Global Biodiversity Outlook 4</h5>
 				<p></p>

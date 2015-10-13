@@ -32,7 +32,7 @@
 		</li>
 		<li>
 			<a href="/undb/profile-organization.php">
-				<img src="/undb/img/logo/UNEP.svg" alt="">
+				<img src="/undb/img/logo/unep.svg" alt="">
 			</a>
 		</li>
 		<li>

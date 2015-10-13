@@ -18,7 +18,7 @@
 			<img src="/undb/img/logo/undb.svg" alt="">
 		</div>				
 	</a>	
-	<a href="#" class="linkBlock green titleText medium">
+	<a href="#" class="linkBlock green titleText medium smallText">
 		<div>
 			<h5>Become a Biodiversity Champion</h5>
 			<p>make a pledge</p>
@@ -43,7 +43,7 @@
 		</div>				
 	</a>		
 
-	<a href="#" class="linkBlock green titleText medium center-icon">
+	<a href="#" class="linkBlock green titleText medium center-icon mediumText">
 		<div>
 			<h5>Register your action</h5>
 			<p></p>

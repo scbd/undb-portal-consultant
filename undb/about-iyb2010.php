@@ -56,7 +56,7 @@
 			</div>				
 		</a>
 
-		<a href="#" class="linkBlock green titleText medium">
+		<a href="#" class="linkBlock green titleText medium mediumText">
 			<div>
 				<h5>IYB videos</h5>
 				<p>including the official IYB video ></p>
@@ -65,7 +65,7 @@
 			</div>				
 		</a>		
 
-		<div class="linkBlock green downloadLanguage medium">
+		<div class="linkBlock green downloadLanguage medium mediumText">
 			<div>
 				<h5>IYB Closing event in Japan</h5>
 				<p>Download the report</p>
