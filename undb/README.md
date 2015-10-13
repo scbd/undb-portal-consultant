@@ -21,8 +21,10 @@ The CSS file is compiled using less. The file has a table of content on the top:
 ```
 ### How to use {less}
 - Install node.js
+- Open a terminal in this folder
 - Run *npm install* (package.js have everything needed)
-- Run *grunt* and grunt will watch for any changes in the style.less file and compile it
+- Run *grunt*
+grunt will now watch for any changes in the style.less file and compile it to style.css
 
 ## Javascript
 A single, simple and commented script.js file is used. Sections are highlighted the same way as in CSS:
