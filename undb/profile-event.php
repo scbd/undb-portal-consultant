@@ -5,7 +5,9 @@
 <div class="center profile organization">
 
 	<div class="profile-column">
-		<img src="/undb/img/country-map.png" alt="">
+		<div class="profile-image" style="background-image:url('/undb/img/country-map.png')">
+			
+		</div>
 
 		<ul class="links">
 			<li>

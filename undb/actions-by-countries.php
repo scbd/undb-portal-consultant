@@ -9,7 +9,7 @@
 	<p>
 		Some of the major components of the Convention on Biological Diversity are:
 	</p>
-	<ul class="basic-list round-arrow-bullet ">
+	<ul class="basic-list">
 		<li>Measures to promote conservation and sustainable use (<a href="#">Articles 6-10</a>)</li>
 		<li>Minimizing adverse impacts and impact assessment (<a href="#">Article 14</a>)</li>
 		<li>Access to genetic resources and benefit-sharing (<a href="#">Article 15</a>)</li>
