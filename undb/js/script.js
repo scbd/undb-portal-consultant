@@ -52,56 +52,56 @@ else{
 
 
 // menu arrow indicator animation
-function activeArrow(elem, left, width, speed){
-	$(elem).siblings('.arrow_slider_wrapper').children('.arrow_slider')
-		.stop().animate({left:left, width:width}, speed);			
-}
-$(window).resize(function(){
-	$('.menu_arrow').each(function(){
-		if($(this).children('.active').length > 0){
-			var left = $(this).children('.active').offset().left - $(this).offset().left;
-			var width = $(this).children('.active').children('a').css('width');
-			activeArrow(this, left, width, 350);
-		}
-	});
-});
+// function activeArrow(elem, left, width, speed){
+// 	$(elem).siblings('.arrow_slider_wrapper').children('.arrow_slider')
+// 		.stop().animate({left:left, width:width}, speed);			
+// }
+// $(window).resize(function(){
+// 	$('.menu_arrow').each(function(){
+// 		if($(this).children('.active').length > 0){
+// 			var left = $(this).children('.active').offset().left - $(this).offset().left;
+// 			var width = $(this).children('.active').children('a').css('width');
+// 			activeArrow(this, left, width, 350);
+// 		}
+// 	});
+// });
 
 
 // menu arrow indicator animation
-$('.menu_arrow:not(.hide)').each(function(){
+// $('.menu_arrow:not(.hide)').each(function(){
 
 
-		if($(this).children('.active').length > 0){
+// 		if($(this).children('.active').length > 0){
 
-			// init
-			var left = $(this).children('.active').offset().left - $(this).offset().left;
-			var width = $(this).children('.active').css('width');
-			activeArrow(this, left, width, 50);
+// 			// init
+// 			var left = $(this).children('.active').offset().left - $(this).offset().left;
+// 			var width = $(this).children('.active').css('width');
+// 			activeArrow(this, left, width, 50);
 
 
-			// on click
-			$(this).children('li').children('a').click(function(e){
-				// e.preventDefault();
-				var left = $(this).parent('li').offset().left - $(this).offset().left;
-				var width = $(this).css('width');
-				activeArrow(this, left, width, 350);
-			});
+// 			// on click
+// 			$(this).children('li').children('a').click(function(e){
+// 				// e.preventDefault();
+// 				var left = $(this).parent('li').offset().left - $(this).offset().left;
+// 				var width = $(this).css('width');
+// 				activeArrow(this, left, width, 350);
+// 			});
 
-			// on hover
-			$(this).children('li').hover(function(){
-				var left =  $(this).offset().left - $(this).parent().offset().left;
-				var width = $(this).css('width');
-				activeArrow($(this).parent('ul'), left, width, 350);
-			});
+// 			// on hover
+// 			$(this).children('li').hover(function(){
+// 				var left =  $(this).offset().left - $(this).parent().offset().left;
+// 				var width = $(this).css('width');
+// 				activeArrow($(this).parent('ul'), left, width, 350);
+// 			});
 
-			$(this).mouseleave(function(){
-				var left = $(this).children('.active').offset().left - $(this).offset().left;
-				var width = $(this).children('.active').css('width');
-				activeArrow(this, left, width, 350);			
-			});
-		}
+// 			$(this).mouseleave(function(){
+// 				var left = $(this).children('.active').offset().left - $(this).offset().left;
+// 				var width = $(this).children('.active').css('width');
+// 				activeArrow(this, left, width, 350);			
+// 			});
+// 		}
 
-});
+// });
 
 
 // handling sub menus

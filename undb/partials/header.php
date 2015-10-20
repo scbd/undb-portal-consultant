@@ -199,7 +199,7 @@
     
 
     <div class="dropdown" id="languageMenu">
-        <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="/undb/img/icon/language.svg" alt=""></button>
+        <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="/undb/img/icon/web_white.svg" alt=""></button>
         <ul class="dropdown-menu">
             <li><a href="">العربية</a></li>
             <li><a href="">English</a></li>
@@ -215,8 +215,7 @@
 
 <header>
     <div id="logo">
-        <a href="//un.org"><img src="/undb/img/logo/un.svg" alt=""></a>
-        <a href="/undb/"><img src="/undb/img/logo/undb.svg" alt=""></a>
+        <a href="/undb/"><img src="/undb/img/logo/un+undb.svg" alt=""></a>
     </div>
 
     <div id="slogan">

@@ -48,7 +48,7 @@ button, input, select, textarea {
 	font-size: 100%;
 }
 body{
-	overflow-y:scroll
+	overflow-y:scroll;
 }
 a:focus, a:hover {
 	text-decoration: none;
@@ -629,9 +629,12 @@ body{
 
 #languageMenu{
 	button{
+		padding:0px;
 		background-color:@lightBlue;
 		img{
-			width:20px;
+			width:22px;
+			position: relative;
+			top:-1px;
 		}
 	}
 	.dropdown-menu{
@@ -836,12 +839,12 @@ header{
 	overflow: hidden;
 }
 #logo{
-	height:72px;
+	max-height:72px;
 	float:left;
 	width:420px;
 }
 #logo img{
-	height:72px;
+	max-height:72px;
 	display: inline-block;
 }
 #logo a:nth-child(2){
@@ -879,8 +882,13 @@ header{
 #secondary{
 	background-color: @darkGreen;
 	// padding-left:200px;
-	li:first-child{
-		margin-left:100px;
+	li{
+		&:first-child{
+			margin-left:100px;
+		}		
+		&::after{
+			background-image: url('../img/icon/fullarrow_up_white.svg');			
+		}		
 	}
 }
 .menu ul li{
@@ -889,9 +897,36 @@ header{
 	position: relative;
 	line-height: 42px;
 
+	&::after{
+		.transition(all, 0.2s);
+		content:'';
+		background-image: url('../img/icon/fullarrow_up.svg');
+		background-repeat: no-repeat;
+		background-position: center center;
+		width:20px;
+		height:20px;
+    display: block;
+    opacity:0;
+    top: -8px;
+    position: relative;
+    left: 50%;
+    margin-left: -12px;					
+	}		
+	&:hover{
+		&::after{
+			opacity:1;
+			top: -12px;
+		}
+	}
+
 }
 .menu ul li.active{
 	font-weight: bold;
+	&::after{
+		content:'';opacity:1;
+		top: -12px;
+	}
+
 }
 .menu ul.menu_arrow li a{
 	color:#ffffff;
@@ -907,6 +942,9 @@ header{
 }
 
 .arrow_slider_wrapper{
+	// deactivated sliding arrow
+	display: none;
+
 	margin:30px 0px 0px;
 	position: absolute;
 	left:9px;
@@ -1014,7 +1052,7 @@ a{
 
 
 .article{
-	max-width:775px;
+	max-width:875px;
 	padding:10px;
 }
 .article h1{
@@ -1339,6 +1377,17 @@ ol.basic-list{
 		line-height: 42px;
 		padding:0px;
 		font-size:0.9em;
+		.bootstrap-select{
+			width:70px !important;
+			button{
+				height:34px;					
+				.border-radius(7px);
+
+			}
+		}		
+	}
+	.wrapper_pagination{
+		overflow: hidden;
 	}
 	nav{
 		display: inline-block;
@@ -1486,6 +1535,13 @@ ol.basic-list{
 			margin:0px auto;
 			width:200px;
 			height:200px;
+		}
+		.profile-image{
+			width:200px;
+			height:200px;
+			background-repeat: no-repeat;
+			background-position: center center;			
+			background-size: 100%;
 		}
 		.party{
 			text-align: left;
@@ -2093,6 +2149,26 @@ ol.basic-list{
 
 /* FORMS */
 
+.bootstrap-select{
+	&:focus{
+		outline:0 !important;
+		border:1px solid @lightGreen;
+	}
+	.caret{
+		border:none;
+		background:url('../img/icon/round-arrow_down.svg') no-repeat;
+		width:10px;
+		height:10px;
+		margin-top: -4px !important;
+		right:14px !important;
+	}
+	button{
+		border:1px solid @borderGray;
+		.border-radius(10px);		
+		height:42px;
+		background-color:#ffffff;
+	}
+}
 form{
 	margin:10px 0px;
 	label{
@@ -2114,20 +2190,6 @@ form{
 		.bootstrap-select{
 			width:290px !important;
 			float:right !important;
-		}
-	}
-	.bootstrap-select{
-		&:focus{
-			outline:0 !important;
-			border:1px solid @lightGreen;
-		}
-		.caret{
-			border:none;
-			background:url('../img/icon/round-arrow_down.svg') no-repeat;
-			width:10px;
-			height:10px;
-			margin-top: -4px !important;
-			right:14px !important;
 		}
 	}
 	input, select, .bootstrap-select button{
@@ -2207,6 +2269,7 @@ form{
 @elementsWidth:465px;
 form.single{
 	color:@textGray;
+	max-width:755px;
 	label{
 		width:228px;
 		text-align: right;

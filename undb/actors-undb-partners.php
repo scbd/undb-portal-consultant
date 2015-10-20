@@ -36,7 +36,7 @@
 </div>
 <div class="wideBackground">
 	<div class="center narrow">
-		<form action="">
+		<form action="" class="double-column">
 			<div class="form-column">
 				<label for="input_country">Country:</label>
 				<select name="" id="" class="selectpicker" data-container="body" data-live-search="true">
@@ -61,28 +61,39 @@
 
 
 <div class="search-result center narrow">
-	<div class="found col-xs-12 col-sm-6">Results <span class="darkGreen">1 to 25</span> of 167 results found</div>
+	<div class="found">Results <span class="darkGreen">1 to 25</span> of 167 results found</div>
+	<div>
+		<div class="found col-xs-12 col-sm-6">
+			Show: 
+				<select name="" id="" class="selectpicker" data-container="body">
+					<option value="">25</option>
+					<option value="">50</option>
+					<option value="">100</option>
+					<option value="">All</option>
+				</select>
 
-	<nav class="col-xs-12 col-sm-6">
-	  <ul class="pagination">
-	    <li>
-	      <a href="#" aria-label="Previous">
-	        <span aria-hidden="true">&laquo; Previous</span>
-	      </a>
-	    </li>
-	    <li><a href="#">1</a></li>
-	    <li><a href="#">2</a></li>
-	    <li><a href="#">3</a></li>
-	    <li><a href="#">4</a></li>
-	    <li><a href="#">5</a></li>
-	    <li>
-	      <a href="#" aria-label="Next">
-	        <span aria-hidden="true">Next &raquo;</span>
-	      </a>
-	    </li>
-	  </ul>
-	</nav>
+		</div>
 
+		<nav class="col-xs-12 col-sm-6">
+		  <ul class="pagination">
+		    <li>
+		      <a href="#" aria-label="Previous">
+		        <span aria-hidden="true">&laquo; Previous</span>
+		      </a>
+		    </li>
+		    <li><a href="#">1</a></li>
+		    <li><a href="#">2</a></li>
+		    <li><a href="#">3</a></li>
+		    <li><a href="#">4</a></li>
+		    <li><a href="#">5</a></li>
+		    <li>
+		      <a href="#" aria-label="Next">
+		        <span aria-hidden="true">Next &raquo;</span>
+		      </a>
+		    </li>
+		  </ul>
+		</nav>
+	</div>
 
 	<div class="listImg">
 		<ul>
