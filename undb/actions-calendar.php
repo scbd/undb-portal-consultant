@@ -16,7 +16,7 @@
 			<h3>Search Criteria</h3>
 		</div>		
 		<form action="" class="double-column">
-			<div class="form-column">
+			<div class="form-column col-md-6 col-sm-6 col-xs-12">
 				<label for="input_country">Country:</label>
 				<select name="" id="" class="selectpicker" data-container="body" data-live-search="true">
 					<option value="">Canada</option>
@@ -36,7 +36,7 @@
 				</select>				
 
 			</div>
-			<div class="form-column">
+			<div class="form-column col-md-6 col-sm-6 col-xs-12">
 				<label for="input_title_countains">Title Contains:</label>
 				<input type="text" name="" id="input_title_countains">
 

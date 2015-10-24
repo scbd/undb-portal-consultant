@@ -93,14 +93,14 @@
 
 <div class="center article">
 	<h3>Learn</h3>
-	<ul class="basic-list round-arrow-bullet spaced">
+	<ul class="basic-list spaced">
 		<li>About biodiversity in your city, region and country</li>
 		<li>How your consumption patterns and everyday actions may impact on biodiversity, sometimes in distant ecosystems</li>
 
 	</ul>
 
 	<h3>Speak</h3>
-	<ul class="basic-list round-arrow-bullet spaced">
+	<ul class="basic-list spaced">
 		<li>Make your views known to the government and the private sector</li>
 		<li>Share your knowledge with people around you</li>
 		<li>Send us your Success stories</li>
@@ -108,7 +108,7 @@
 	</ul>
 
 	<h3>Act</h3>
-	<ul class="basic-list round-arrow-bullet spaced">
+	<ul class="basic-list spaced">
 		<li>Make responsible consumption choices</li>
 		<li>Support activities and organizations that conserve biodiversity</li>
 		<li>Join a local environmental NGO or organize your own activities that will help biodiversity</li>

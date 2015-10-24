@@ -105,16 +105,15 @@ else{
 
 
 // handling sub menus
-$("#siteMenu .dropdown-menu>li>button").click(function(e){
+$("#siteMenu .dropdown-menu>li>a").click(function(e){
 	 e.stopPropagation();
-	 e.preventDefault();
 
 	if($(this).siblings('ul').length > 0){
-		
 		if($(this).parent('li').hasClass('open')){
-			$(this).parent('li').removeClass('open');
+			// $(this).parent('li').removeClass('open');
 		}
 		else{
+			e.preventDefault();
 			$('#siteMenu li.open').removeClass('open');
 			$(this).parent('li').addClass('open');
 		}

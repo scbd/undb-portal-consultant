@@ -1806,25 +1806,26 @@ ol.basic-list{
 
 
 #footer{
-	height:60px;
+	// height:60px;
 	width:100%;
 	text-align:right;
 	padding:36px;
-}
-#footer ul{
-	display: inline-block;
-}
-#footer ul li{
-	display: inline-block;
-	margin:0px 12px;
-}
-#footer ul li a{
-	color:@lightGreen;
-	font-size:0.9em;
-}
-#footer .copyright{
-	color:@darkGreen;
-	display: inline-block;
+	ul{
+		display: inline-block;
+		li{
+			display: inline-block;
+			margin:0px 12px;
+			a{
+				color:@lightGreen;
+				font-size:0.9em;
+			}			
+		}		
+	}
+	.copyright{
+		color:@darkGreen;
+		display: inline-block;
+		margin:0px 12px;		
+	}	
 }
 /* ///FOOTER */
 
@@ -2035,41 +2036,47 @@ ol.basic-list{
 	position: relative;
 	text-align: center;
 	z-index: 5;
+	height:480px;
+
+	.mapPopup{
+		position: absolute;
+		min-height:80px;
+		bottom:2%;
+		width:98%;
+		background-color:fade(@darkGreen, 90%);
+		padding:10px;
+		margin:0 1%;
+		vertical-align: middle;
+		display: table;
+		.border-radius(5px);
+
+		p{
+			color:#ffffff;
+			display: table-cell;
+			vertical-align: middle;
+			max-width: 90%;
+			a{
+				color:@lightGreen;
+			}			
+		}	
+		button{
+			float: right;
+			margin-right:10px;
+			margin-top:16px;
+			display:block;
+		}			
+	}
+
+	img{
+		display: inline-block;
+		max-height: 480px;
+		width:100%;
+		height:480px;
+	}	
+
 }
 
-.mapPopup{
-	position: absolute;
-	min-height:80px;
-	bottom:2%;
-	width:98%;
-	background-color:fade(@darkGreen, 90%);
-	padding:10px;
-	margin:0 1%;
-	vertical-align: middle;
-	display: table;
-	.border-radius(5px);
-}
-.mapPopup p{
-	color:#ffffff;
-	display: table-cell;
-	vertical-align: middle;
-	max-width: 90%;
-}
-.mapPopup p a{
-	color:@lightGreen;
-}
-.mapPopup button{
-	float: right;
-	margin-right:10px;
-	margin-top:16px;
-	display:block;
-}
 
-#googlemap img{
-	display: inline-block;
-	max-height: 480px;
-	width:100%;
-}
 
 
 
@@ -2234,6 +2241,7 @@ form{
 	}
 	.form-column{
 		max-width:400px;
+		padding:0px;
 		overflow: hidden;
 		input, select, .bootstrap-select button{
 			float:right;
@@ -2469,6 +2477,10 @@ form.single{
 	.space.wide{
 		margin:auto 48px;
 	}	
+	.linkBlock{
+		margin-left:5px !important;
+		margin-right:5px !important;
+	}
 }
 
 // for profile pages
@@ -2612,7 +2624,7 @@ form.single{
 
 
 	.form-column{
-		margin:12px auto;
+		margin:0px auto;
 		display: block;
 		float:none;
 	}
@@ -2658,7 +2670,6 @@ form.single{
 
 
 	}
-
 // end media max-width:767px 
 }
 
@@ -2666,7 +2677,7 @@ form.single{
 	.form-column{
 		display: inline-block;
 		&:nth-child(2){
-			float:right !important;
+			float:right ;
 		}
 	}
 }
