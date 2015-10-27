@@ -14,7 +14,7 @@
 		  	</div>
 		  </div>
 		  <div>
-		  	
+		  	<img src="/undb/img/slider/slider-1.jpg" alt="">
 		  	<div class="sliderPopup">
 		  		<a href="#">
 		  			<h4>Second slide</h4>
@@ -24,7 +24,7 @@
 		  	</div>
 		  </div>
 		  <div>
-		  	
+		  	<img src="/undb/img/slider/slider-1.jpg" alt="">
 		  	<div class="sliderPopup">
 		  		<a href="#">
 		  			<h4>2015 is the Time for Global Action</h4>

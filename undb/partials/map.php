@@ -1,7 +1,7 @@
 <div id="map_wrapper">
 <div id="map">
 	<div class="centerREMOVE">
-		<div class="sideSelection col-md-3">
+		<div class="sideSelection col-md-3 col-sm-3 col-xs-4">
 
 			<div class="floatRight">
 				<h5>UNDB Network</h5>
@@ -30,7 +30,7 @@
 			</div>
 
 		</div>
-		<div id="googlemap" class="col-md-9">
+		<div id="googlemap" class="col-md-9 col-sm-9 col-xs-8">
 			<!-- Replace img with the Map  -->
 			<img src="/undb/img/map.png" alt="">
 			<div class="mapPopup">
