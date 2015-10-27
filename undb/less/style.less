@@ -2333,7 +2333,7 @@ form.single{
 	}
 	.checkbox{
 		margin-left:24px;
-		margin-right:50px;
+		// margin-right:50px;
 		display: inline-block;
 		.box{
 			border-color:@borderGray;
@@ -2704,6 +2704,25 @@ form.single{
 		}
 		ul{
 			margin:32px !important;
+		}
+	}
+	.bubbles li{
+		// width: auto;
+		width:100%;
+		&::before{
+			position: absolute;
+			top:50%;
+			margin-top:-25px;
+		}
+		p{
+			padding-left:64px;
+		}
+	}
+	.article{
+		&.narrow{
+			p, h3{
+				width:auto !important;	
+			}
 		}
 	}
 

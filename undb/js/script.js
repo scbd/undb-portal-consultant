@@ -131,6 +131,7 @@ $('#siteMenu').click(function(){
 $(window).resize(function(){
 	$('.dropdown').removeClass('open');
 	$('.dropdown-menu li.open').removeClass('open');
+	$('.darkbox').removeClass('open');
 });
 
 
@@ -218,6 +219,9 @@ $(window).on('scroll', function(){
  	mobile:false,
  	size:40
  });
+$('body').on('touchstart.dropdown', '.dropdown-menu', function (e) { 
+    e.stopPropagation(); 
+});
 
 /* ///FORMS */
 
