@@ -37,3 +37,4 @@ A single, simple and commented script.js file is used. Sections are highlighted 
 - jQuery (js)
 - Slick (css/js)
 - Bootstrap select (css/js)
+Version 1.6.5 max. So far ( up to 1.7.5 as of the timing of writing this ) all the versions after 1.6.5 have a bug where the select box doesn't close on mobile when touching outside.
